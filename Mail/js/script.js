@@ -32,11 +32,16 @@ form.addEventListener('submit',
         //     check = false;
         //     console.log(' non valido', check, typeof chek);
         // }
+        // Alert 
+        const message = document.getElementById('message');
 
         if (check) {
-            alert('Email valida!');
+
+           message.innerHTML = 'Email valida';
+
         } else {
-            alert('Email non valida!');
+
+            message.innerHTML = 'Email non valida';
         }
         }
     }
